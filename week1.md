@@ -224,3 +224,16 @@ Codename:       jammy
 - Ubuntu Server Documentation: https://ubuntu.com/server/docs
 - VirtualBox Networking: https://www.virtualbox.org/manual/ch06.html
 - Netplan Configuration: https://netplan.io/examples
+
+## 6. Version Control Verification
+
+### GitHub Repository Setup
+The coursework documentation and scripts are maintained in a GitHub repository to ensure version control and history tracking.
+
+![GitHub Commit Log](images/github_commit_log_2.png)
+
+*Figure: Verified Commit History showing correct author attribution*
+
+![Initial Commit Issue](images/github_commit_log_1.png)
+
+*Figure: Initial commit log (for reference)*
