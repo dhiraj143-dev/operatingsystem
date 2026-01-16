@@ -485,6 +485,8 @@ sudo iptables-save > ~/iptables-backup.rules
 ---
 
 ## Configuration Verification Checklist
+![Initial System Config](images/week4_config.png)
+*Figure: Verification of User Groups and Firewall Status*
 
 | Item | Verification Command | Expected Result | Status |
 |------|---------------------|-----------------|--------|

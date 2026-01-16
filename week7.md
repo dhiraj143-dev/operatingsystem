@@ -10,6 +10,9 @@ This phase conducts a comprehensive security audit of the server configuration a
 
 ### 1.1 Install Lynis
 
+![System Security Audit](images/week7_audit.png)
+*Figure: Lynis Security Audit Report and AIDE Version Verification*
+
 ```bash
 # Install Lynis security auditing tool
 sudo apt install lynis -y

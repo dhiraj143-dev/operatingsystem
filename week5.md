@@ -620,6 +620,9 @@ fi
 
 #==============================================================================
 # SECTION 6: fail2ban Checks
+![Advanced Security Config](images/week5_security.png)
+*Figure: Verification of fail2ban version and AppArmor status*
+
 # Verifies intrusion detection from Phase 5
 #==============================================================================
 echo -e "\n[6] FAIL2BAN CHECKS"
