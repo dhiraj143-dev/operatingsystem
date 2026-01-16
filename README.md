@@ -29,11 +29,23 @@ This repository contains documentation for a 7-phase operating system deployment
 
 ---
 
-## 🖥️ System Architecture
+## 🖥️ System Architecture (Lab Environment)
 
-- **Server**: Ubuntu Server 22.04 LTS (192.168.56.10)
-- **Workstation**: Ubuntu Desktop 22.04 LTS (192.168.56.20)
-- **Network**: VirtualBox Host-Only (vboxnet0) + NAT
+This coursework was completed using a virtualized lab environment:
+
+- **Server VM**: Ubuntu Server 22.04 LTS (Headless)
+  - **IP**: 192.168.56.10
+  - **Role**: Target for deployment, hardening, and testing
+- **Workstation VM**: Ubuntu Desktop 22.04 LTS
+  - **IP**: 192.168.56.20
+  - **Role**: Administration console (SSH), monitoring station
+- **Network**: VirtualBox Host-Only Network (vboxnet0) for isolated communication
+
+## ✅ Project Status
+- **Weeks 1-7**: Completed
+- **Security Hardening**: Applied & Verified
+- **Performance benchmarks**: Conducted
+- **Evidence**: Terminal screenshots embedded in documentation
 
 ---
 
