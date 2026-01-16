@@ -1,4 +1,0 @@
-Group Check:
-sudo:x:27:adminuser
-\nUFW Status:
-Status: inactive

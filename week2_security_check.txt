@@ -1,4 +1,0 @@
--rw-r----- 1 root shadow 501 Jan  9 02:08 /etc/shadow
-\n
-UFW Status Check:
-Status: inactive (Container)

@@ -1,7 +1,0 @@
-stress-ng, version 0.13.12 (gcc 11.3, aarch64 Linux 6.12.54-linuxkit)
-fio-3.28
-iperf 3.9 (cJSON 1.7.13)
-Linux 22f6ba927e70 6.12.54-linuxkit #1 SMP Tue Nov  4 21:21:47 UTC 2025 aarch64
-Optional features available: CPU affinity setting, IPv6 flow label, SCTP, TCP congestion algorithm setting, sendfile / zerocopy, socket pacing, authentication
-Server version: Apache/2.4.52 (Ubuntu)
-Server built:   2025-08-11T12:10:10

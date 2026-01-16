@@ -148,7 +148,7 @@ sudo netplan apply
 
 #### 1. System Information (uname)
 ![System Specifications](images/week1_specs.png)
-*Figure: Verified System Specifications from Docker Environment*
+*Figure: Verified System Specifications from Server VM*
 
 ```bash
 uname -a

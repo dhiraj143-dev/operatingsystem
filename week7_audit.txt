@@ -1,6 +1,0 @@
-3.0.7
-\n--- Lynis System Scan Summary ---
-Hardening Index: 72 [Good]
-Tests performed: 215
-\nAIDE Version:
-Aide 0.17.4
