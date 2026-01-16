@@ -44,23 +44,15 @@ sequenceDiagram
 
 ### Testing Schedule
 
-```mermaid
-gantt
-    title Performance Testing Timeline
-    dateFormat  YYYY-MM-DD
-    section Baseline
-    System idle metrics           :a1, 2024-01-01, 1d
-    Network baseline              :a2, after a1, 1d
-    section Application Testing
-    CPU-intensive workload        :b1, after a2, 2d
-    RAM-intensive workload        :b2, after b1, 2d
-    I/O-intensive workload        :b3, after b2, 2d
-    Network-intensive workload    :b4, after b3, 2d
-    Server application testing    :b5, after b4, 2d
-    section Analysis
-    Data compilation              :c1, after b5, 1d
-    Report generation             :c2, after c1, 1d
-```
+### Testing Approach
+
+The testing methodology focuses on verifying the security configurations applied in the later phases. The primary evidence will be the terminal screenshots demonstrating active security measures.
+
+### Key Performance Indicators (KPIs)
+
+- **CPU Usage**: Monitoring overhead only.
+- **Security Services**: `fail2ban` and `apparmor` active status.
+- **Firewall**: `ufw` status verification.
 
 ---
 

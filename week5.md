@@ -20,18 +20,12 @@ This phase implements advanced security controls including:
 
 AppArmor (Application Armor) is a Linux Security Module that provides Mandatory Access Control (MAC). It restricts programs' capabilities based on per-program profiles.
 
-```mermaid
-graph TD
-    A[Application Request] --> B{AppArmor Check}
-    B -->|Allowed by Profile| C[Request Granted]
-    B -->|Denied by Profile| D[Request Blocked]
-    D --> E[Event Logged]
-    
-    subgraph "Profile Modes"
-        F[Enforce Mode] --> G[Blocks Violations]
-        H[Complain Mode] --> I[Logs Only]
-    end
-```
+### 1.1 Understanding AppArmor
+
+AppArmor (Application Armor) is a Linux Security Module that provides Mandatory Access Control (MAC). It restricts programs' capabilities based on per-program profiles.
+
+- **Enforce Mode**: Blocks and logs policy violations.
+- **Complain Mode**: Logs but allows violations (useful for debugging).
 
 ### 1.2 Verify AppArmor Status
 

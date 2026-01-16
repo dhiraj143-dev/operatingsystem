@@ -10,15 +10,16 @@ This phase executes detailed performance testing and analyzes operating system b
 
 ### Testing Approach
 
-```mermaid
-flowchart TD
-    A[Baseline Testing] --> B[Application Load Testing]
-    B --> C[Performance Analysis]
-    C --> D[Identify Bottlenecks]
-    D --> E[Implement Optimizations]
-    E --> F[Re-test and Compare]
-    F --> G[Generate Final Report]
-```
+### Testing Approach
+
+The testing methodology follows a structured approach:
+1. Baseline Testing
+2. Application Load Testing
+3. Performance Analysis
+4. Identification of Bottlenecks
+5. Optimization Implementation
+6. Re-testing and Comparison
+7. Final Reporting
 
 ### Test Procedure
 
@@ -206,42 +207,23 @@ ab -n 10000 -c 100 http://192.168.56.10/
 
 ### CPU Usage Comparison
 
-```mermaid
-xychart-beta
-    title "CPU Usage by Workload Type"
-    x-axis ["Baseline", "stress-ng", "memtester", "fio", "iperf3", "Apache"]
-    y-axis "CPU Usage (%)" 0 --> 100
-    bar [2.5, 95.2, 35.4, 15.2, 18.4, 45.8]
-```
+### CPU Usage Comparison
+The stress test results confirm that `stress-ng` successfully drove CPU usage to near 100% (95.2% average under load) compared to the 2.5% baseline.
 
 ### Memory Utilization
 
-```mermaid
-pie title Memory Usage Distribution - memtester Test
-    "memtester Allocation" : 2048
-    "System Overhead" : 512
-    "Available" : 1536
-```
+### Memory Utilization
+Memory utilization verification confirmed expected allocation patterns during `memtester` execution.
 
 ### I/O Performance Comparison
 
-```mermaid
-xychart-beta
-    title "Disk I/O Performance (IOPS)"
-    x-axis ["Seq Read", "Seq Write", "Rand Read", "Rand Write"]
-    y-axis "IOPS" 0 --> 50000
-    bar [45200, 38500, 12300, 10800]
-```
+### I/O Performance Comparison
+FIO results demonstrated clear performance differentiation between sequential (approx 40k IOPS) and random I/O operations (approx 10-12k IOPS).
 
 ### Apache Response Time vs Concurrency
 
-```mermaid
-xychart-beta
-    title "Apache Response Time vs Concurrency"
-    x-axis ["10", "50", "100", "200"]
-    y-axis "Response Time (ms)" 0 --> 50
-    line [2.21, 9.55, 18.48, 40.89]
-```
+### Apache Response Time
+Response time analysis showed a linear increase in latency as concurrency levels increased, verifying standard web server behavior under load.
 
 ---
 
@@ -389,23 +371,11 @@ echo "none" | sudo tee /sys/block/sda/queue/scheduler
 
 ## Performance Summary Dashboard
 
-```mermaid
-graph TD
-    subgraph "Performance Metrics"
-        A[CPU<br/>Peak: 95%<br/>Avg: 28%]
-        B[Memory<br/>Peak: 63%<br/>Avg: 35%]
-        C[Disk<br/>Peak: 150 MB/s<br/>Avg: 48 MB/s]
-        D[Network<br/>Peak: 948 Mbps<br/>Avg: 450 Mbps]
-    end
-    
-    subgraph "Optimizations"
-        E[Apache MPM<br/>+26% throughput]
-        F[I/O Scheduler<br/>+18% IOPS]
-    end
-    
-    A --> E
-    C --> F
-```
+## Performance Summary
+- **CPU**: Reliable performance under saturation (95%+).
+- **Disk**: IOPS congruent with virtualized storage characteristics.
+- **Network**: Near line-rate throughput verified.
+- **Optimizations**: Configuration tuning yielded measurable improvements in web server throughput.
 
 ---
 

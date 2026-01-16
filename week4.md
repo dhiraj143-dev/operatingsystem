@@ -503,23 +503,10 @@ sudo iptables-save > ~/iptables-backup.rules
 
 ## Security Implementation Summary
 
-```mermaid
-graph TD
-    A[Phase 4 Security] --> B[SSH Hardening]
-    A --> C[Firewall]
-    A --> D[User Management]
-    
-    B --> B1[Key-only Auth]
-    B --> B2[Root Login Disabled]
-    B --> B3[Max 3 Attempts]
-    
-    C --> C1[Default Deny]
-    C --> C2[SSH from 192.168.56.20]
-    
-    D --> D1[adminuser Created]
-    D --> D2[sudo Access]
-    D --> D3[Root Locked]
-```
+## Security Implementation Summary
+- **SSH Hardening**: Implemented key-based authentication and disabled root login.
+- **Firewall**: Established default deny policy with precise allowances for workstation access.
+- **User Management**: Created dedicated admin user with verifiable sudo privileges.
 
 ---
 

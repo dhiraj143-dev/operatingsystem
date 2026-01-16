@@ -17,30 +17,14 @@
 
 ### Detailed Justifications
 
-```mermaid
-graph LR
-    subgraph "Workload Types"
-        CPU["CPU-Intensive"]
-        RAM["RAM-Intensive"]
-        IO["I/O-Intensive"]
-        NET["Network-Intensive"]
-        SRV["Server Application"]
-    end
-    
-    subgraph "Selected Applications"
-        STRESS["stress-ng"]
-        MEM["memtester"]
-        FIO["fio"]
-        IPERF["iperf3"]
-        APACHE["Apache httpd"]
-    end
-    
-    CPU --> STRESS
-    RAM --> MEM
-    IO --> FIO
-    NET --> IPERF
-    SRV --> APACHE
-```
+### Detailed Justifications
+
+**Workload Types and Selected Applications**
+- **CPU-Intensive**: `stress-ng`
+- **RAM-Intensive**: `memtester`
+- **I/O-Intensive**: `fio`
+- **Network-Intensive**: `iperf3`
+- **Server Application**: `Apache httpd`
 
 #### CPU-Intensive: stress-ng
 

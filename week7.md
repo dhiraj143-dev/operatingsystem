@@ -156,18 +156,10 @@ OS details: Linux 5.0 - 5.5
 
 ### 2.3 Network Security Summary
 
-```mermaid
-graph TD
-    A[External Network] -->|BLOCKED| B[UFW Firewall]
-    B --> C{Port Check}
-    C -->|22/tcp| D[SSH - Key Auth Only]
-    C -->|80/tcp| E[Apache - ModSecurity]
-    C -->|Other| F[DROPPED]
-    
-    subgraph "Allowed from 192.168.56.20 only"
-        D
-    end
-```
+### 2.3 Network Security Summary
+- **Open ports**: 2 (SSH, HTTP) - Verified.
+- **Firewall**: Active (UFW) - Verified.
+- **Protocol**: SSH v2 enforced - Verified.
 
 | Security Check | Result | Notes |
 |---------------|--------|-------|
@@ -359,21 +351,10 @@ sudo journalctl -p warning -n 50
 
 ### Risk Assessment Matrix
 
-```mermaid
-quadrantChart
-    title Security Risk Assessment
-    x-axis Low Impact --> High Impact
-    y-axis Low Likelihood --> High Likelihood
-    quadrant-1 Immediate Action
-    quadrant-2 Plan Response
-    quadrant-3 Monitor
-    quadrant-4 Accept Risk
-    "SSH Brute Force": [0.2, 0.3]
-    "Known Vulnerabilities": [0.25, 0.15]
-    "Privilege Escalation": [0.7, 0.2]
-    "Unauthorized Access": [0.4, 0.2]
-    "DoS Attack": [0.5, 0.3]
-```
+### Risk Assessment Summary
+- **SSH Brute Force**: Risk mitigated via fail2ban and key-based auth.
+- **Privilege Escalation**: Risk mitigated via sudo configuration and AppArmor.
+- **Unauthorized Access**: Risk mitigated via UFW default deny policy.
 
 ### Recommendations Summary
 
