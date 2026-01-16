@@ -147,6 +147,12 @@ sudo netplan apply
 **Note:** Run these commands on your actual server and replace placeholder outputs with real values.
 
 #### 1. System Information (uname)
+![System Specifications](images/week1_specs.png)
+*Figure: Verified System Specifications from Docker Environment*
+
+```bash
+uname -a
+```
 ```bash
 uname -a
 ```

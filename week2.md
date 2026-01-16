@@ -66,6 +66,9 @@ gantt
 
 ## 2. Security Configuration Checklist
 
+![Security Audit Evidence](images/week2_security.png)
+*Figure: Security Configuration Verification (Filesystem Permissions & Firewall Status)*
+
 ### SSH Hardening
 
 | Configuration | Setting | File Location | Priority |

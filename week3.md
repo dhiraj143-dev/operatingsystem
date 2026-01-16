@@ -2,6 +2,9 @@
 
 ## 1. Application Selection Matrix
 
+![Application Versions](images/week3_versions.png)
+*Figure: Verified Application Versions Installed in Test Environment*
+
 ### Workload Categories and Selected Applications
 
 | Workload Type | Application | Version | Purpose | License |

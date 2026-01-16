@@ -267,11 +267,11 @@ xychart-beta
 
 ### Test Evidence Galleries
 
-![Test Result A](images/screenshot_1.png)
-*Figure: Performance Test Result 1*
+![Stress Test Result](images/week6_stress.png)
+*Figure: stress-ng CPU Stress Test Output (50% Load)*
 
-![Test Result B](images/screenshot_2.png)
-*Figure: Performance Test Result 2*
+![FIO Test Result](images/week6_fio.png)
+*Figure: FIO random read/write Benchmark Result*
 
 ---
 
