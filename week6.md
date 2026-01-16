@@ -265,6 +265,14 @@ xychart-beta
 3. **Review results**: Display collected CSV data
 4. **Analyze graphs**: Show generated visualizations
 
+### Test Evidence Galleries
+
+![Test Result A](images/screenshot_1.png)
+*Figure: Performance Test Result 1*
+
+![Test Result B](images/screenshot_2.png)
+*Figure: Performance Test Result 2*
+
 ---
 
 ## 5. Network Performance Analysis
